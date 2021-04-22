@@ -12,7 +12,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "generate:config": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generateConfig"
+    "generate:config": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generateConfig",
+    "dev": "SET NODE_ENV=development & SET PORT=3000 & react-scripts start"
   },
   "husky": {
     "hooks": {
