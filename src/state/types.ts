@@ -18,7 +18,7 @@ export interface Farm extends FarmConfig {
   lpTotalInQuoteToken?: BigNumber
   tokenPriceVsQuote?: BigNumber
   poolWeight?: BigNumber
-  finixPerBlock?: BigNumber
+  puppyPerBlock?: BigNumber
   BONUS_MULTIPLIER?: BigNumber
   lpTotalSupply?: BigNumber
   apy?: BigNumber

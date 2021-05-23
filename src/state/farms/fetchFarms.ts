@@ -78,7 +78,7 @@ const fetchFarms = async () => {
         .div(new BigNumber(10).pow(quoteTokenDecimals))
         .times(lpTokenRatio)
 
-      const [info, totalAllocPoint, finixPerBlock, BONUS_MULTIPLIER] = await multicall(herodotusABI, [
+      const [info, totalAllocPoint, puppyPerBlock, BONUS_MULTIPLIER] = await multicall(herodotusABI, [
         {
           address: getHerodotusAddress(),
           name: 'poolInfo',
@@ -90,7 +90,7 @@ const fetchFarms = async () => {
         },
         {
           address: getHerodotusAddress(),
-          name: 'finixPerBlock',
+          name: 'puppyPerBlock',
         },
         {
           address: getHerodotusAddress(),
@@ -109,7 +109,7 @@ const fetchFarms = async () => {
         tokenPriceVsQuote: quoteTokenAmount.div(tokenAmount).toJSON(),
         poolWeight: poolWeight.toJSON(),
         multiplier: `${allocPoint.div(100).toString()}X`,
-        finixPerBlock: new BigNumber(finixPerBlock).toJSON(),
+        puppyPerBlock: new BigNumber(puppyPerBlock).toJSON(),
         BONUS_MULTIPLIER: new BigNumber(BONUS_MULTIPLIER).toJSON(),
         lpTotalSupply,
       }

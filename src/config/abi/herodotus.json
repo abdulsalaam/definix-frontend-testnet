@@ -2,13 +2,13 @@
   {
     "inputs": [
       {
-        "internalType": "contract FinixToken",
-        "name": "_finix",
+        "internalType": "contract PuppyToken",
+        "name": "_puppy",
         "type": "address"
       },
       {
-        "internalType": "contract SyrupBar",
-        "name": "_syrup",
+        "internalType": "contract KennelClub",
+        "name": "_kennel",
         "type": "address"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_finixPerBlock",
+        "name": "_puppyPerBlock",
         "type": "uint256"
       },
       {
@@ -161,32 +161,6 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "finix",
-    "outputs": [
-      {
-        "internalType": "contract FinixToken",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "finixPerBlock",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [
       {
         "internalType": "uint256",
@@ -281,6 +255,19 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "kennel",
+    "outputs": [
+      {
+        "internalType": "contract KennelClub",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "uint256",
@@ -352,7 +339,7 @@
         "type": "address"
       }
     ],
-    "name": "pendingFinix",
+    "name": "pendingPuppy",
     "outputs": [
       {
         "internalType": "uint256",
@@ -390,7 +377,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "accFinixPerShare",
+        "name": "accPuppyPerShare",
         "type": "uint256"
       }
     ],
@@ -400,6 +387,32 @@
   {
     "inputs": [],
     "name": "poolLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "puppy",
+    "outputs": [
+      {
+        "internalType": "contract PuppyToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "puppyPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -461,19 +474,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "syrup",
-    "outputs": [
-      {
-        "internalType": "contract SyrupBar",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",

@@ -21,7 +21,7 @@ const useFarmsWithBalance = () => {
     const fetchBalances = async () => {
       const calls = farmsConfig.map((farm) => ({
         address: getHerodotusAddress(),
-        name: 'pendingFinix',
+        name: 'pendingPuppy',
         params: [farm.pid, account],
       }))
 

@@ -11,9 +11,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "generate:config": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generateConfig",
-    "dev": "SET NODE_ENV=development & SET PORT=3000 & react-scripts start"
+    "dev": "SET NODE_ENV=development & SET PORT=3000 & yarn cache clean & react-scripts start"
   },
   "husky": {
     "hooks": {
@@ -36,7 +36,7 @@
   "dependencies": {
     "@binance-chain/bsc-use-wallet": "^0.8.1",
     "@crowdin/crowdin-api-client": "^1.10.4",
-    "@ethersproject/abi": "^5.0.7",
+    "@ethersproject/abi": "^5.2.0",
     "@ethersproject/experimental": "^5.0.1",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/react": "^17.0.2",

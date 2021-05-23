@@ -77,7 +77,7 @@ const Farms: React.FC = () => {
         if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
           return farm
         }
-        const totalRewardPerBlock = new BigNumber(farm.finixPerBlock)
+        const totalRewardPerBlock = new BigNumber(farm.puppyPerBlock)
           .times(farm.BONUS_MULTIPLIER)
           .div(new BigNumber(10).pow(18))
         const finixRewardPerBlock = totalRewardPerBlock.times(farm.poolWeight)
@@ -153,7 +153,7 @@ const Farms: React.FC = () => {
         </MaxWidth>
       </CardSorry> */}
 
-      <Card className="mb-6">
+      {/* <Card className="mb-6">
         <WhatIsFarm>
           <MaxWidth>
             <img src={man} alt="" />
@@ -202,7 +202,7 @@ const Farms: React.FC = () => {
             you want.
           </Text>
         </MaxWidth>
-      </Card>
+      </Card> */}
 
       <TimerWrapper isPhrase2={!(currentTime < phrase2TimeStamp && isPhrase2 === false)} date={phrase2TimeStamp}>
         <FarmTabButtons

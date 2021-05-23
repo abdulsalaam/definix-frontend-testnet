@@ -86,7 +86,7 @@ const CardUpcomingFarms: React.FC = () => {
       return farm
     }
     // eslint-disable-next-line
-    const totalRewardPerBlock = new BigNumber(farm.finixPerBlock)
+    const totalRewardPerBlock = new BigNumber(farm.puppyPerBlock)
       .times(farm.BONUS_MULTIPLIER)
       .div(new BigNumber(10).pow(18))
     const finixRewardPerBlock = totalRewardPerBlock.times(farm.poolWeight)

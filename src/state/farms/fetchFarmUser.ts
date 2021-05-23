@@ -17,6 +17,7 @@ export const fetchFarmUserAllowances = async (account: string) => {
   const parsedLpAllowances = rawLpAllowances.map((lpBalance) => {
     return new BigNumber(lpBalance).toJSON()
   })
+  // console.log('parsedLpAllowances', parsedLpAllowances)
   return parsedLpAllowances
 }
 
@@ -61,7 +62,7 @@ export const fetchFarmUserEarnings = async (account: string) => {
   const calls = farmsConfig.map((farm) => {
     return {
       address: herodotusAdress,
-      name: 'pendingFinix',
+      name: 'pendingPuppy',
       params: [farm.pid, account],
     }
   })

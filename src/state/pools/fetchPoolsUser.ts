@@ -91,7 +91,7 @@ export const fetchUserPendingRewards = async (account) => {
   )
 
   // Finix / Finix pool
-  const pendingReward = await herodotusContract.methods.pendingFinix('0', account).call()
+  const pendingReward = await herodotusContract.methods.pendingPuppy('0', account).call()
 
   return { ...pendingRewards, 0: new BigNumber(pendingReward).toJSON() }
 }
